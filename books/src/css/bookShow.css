@@ -1,0 +1,23 @@
+.book-show {
+  display: flex;
+  flex-direction: row;
+  background-color: #e0e0e0;
+  padding: 0.25em 1em;
+  margin-bottom: 0.5em;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.book-show button {
+  margin-right: 0.5em;
+}
+
+.book-show .title {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.book-show input {
+  margin-right: 1em;
+}

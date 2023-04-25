@@ -1,0 +1,21 @@
+.book-create {
+  background-color: lightskyblue;
+  padding: 0 1em;
+  width: 100%;
+}
+
+.book-create .title {
+  font-size: 18px;
+  margin: 0.25em 0.5em;
+}
+
+.book-create button {
+  margin: 0.5em;
+}
+
+.book-create h3 {
+  padding: 0.25em;
+  margin: 0.25em 0;
+  font-size: 24px;
+  font-weight: 700;
+}

@@ -1,3 +1,16 @@
 {
-  "books": []
+  "books": [
+    {
+      "title": "snowcrash",
+      "id": 1
+    },
+    {
+      "title": "Game of Thrones",
+      "id": 3
+    },
+    {
+      "title": "John Carter",
+      "id": 4
+    }
+  ]
 }

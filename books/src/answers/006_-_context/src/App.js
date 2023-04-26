@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import axios from 'axios';
-import BookList from "./components/BookList";
-import BookCreate from "./components/BookCreate";
+import BookCreate from './components/BookCreate';
+import BookList from './components/BookList';
 
 function App() {
   const [books, setBooks] = useState([]);
-  
+
   const fetchBooks = async () => {
     const response = await axios.get('http://localhost:3001/books');
 
@@ -54,7 +54,7 @@ function App() {
   return (
     <div className="app">
       <h1>Reading List</h1>
-      <BookList books={books} onDelete={deleteBookById} onEdit={editBookById} />
+      <BookList onEdit={editBookById} books={books} onDelete={deleteBookById} />
       <BookCreate onCreate={createBook} />
     </div>
   );

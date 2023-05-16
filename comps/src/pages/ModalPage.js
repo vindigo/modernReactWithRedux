@@ -1,8 +1,12 @@
 import Modal from '../components/Modal';
+import Button from '../components/Button';
 
 function ModalPage() {
   return (
-    <Modal />
+    <div>
+      <button primary>Open Modal</button>
+      <Modal />
+    </div>
   )
 }
 

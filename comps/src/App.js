@@ -4,7 +4,6 @@ import DropdownPage from './pages/DropdownPage';
 import Sidebar from './components/Sidebar';
 import ButtonPage from './components/Button';
 import ModalPage from './components/Modal';
-import Button from './components/Button';
 
 function App () {
   return ( 

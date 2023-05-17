@@ -5,25 +5,18 @@ function Link({ to, children, className, activeClassName }) {
   const { navigate, currentPath } = useNavigation();
 
   const classes = classNames(
-    'text-blue-500',
+    'text-blue-500', 
     className,
     currentPath === to && activeClassName
   );
 
-  const handleClick = (event) => {
-    if (event.metaKey || event.ctrlKey) {
-      return;
-    }
-    event.preventDefault();
-
+  const handleClick = (e) => {
+    if (e.metaKey || e.ctrlKey ) { return; }
+    e.preventDefault();
     navigate(to);
   };
 
-  return (
-    <a className={classes} href={to} onClick={handleClick}>
-      {children}
-    </a>
-  );
-}
+  return <a className={classes} href={to} onClick={handleClick}>{children}</a>
+};
 
 export default Link;

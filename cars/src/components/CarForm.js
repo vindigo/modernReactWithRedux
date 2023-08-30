@@ -23,8 +23,7 @@ function CarForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    dispatch(addCar({ name, cost}));
-
+    dispatch(addCar({ name, cost }));
   }
 
   return <div className="car-form-panel">
